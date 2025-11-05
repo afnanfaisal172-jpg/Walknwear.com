@@ -8,6 +8,175 @@
 </head>
 <body>
 
+  <style>
+    /* Fonts (import) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap');
+
+/* Container & page background */
+.about-section {
+  background: #ffffff;          /* white background */
+  color: #111827;               /* dark text */
+  padding: 60px 20px;
+}
+
+/* Center column */
+.about-container {
+  max-width: 920px;             /* narrow readable column */
+  margin: 0 auto;
+  padding: 10px 24px;
+  box-sizing: border-box;
+}
+
+/* Big elegant title */
+.about-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 6vw, 48px);  /* responsive */
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 6px 0 30px 0;
+  color: #111827;
+}
+
+/* Intro / lead paragraph */
+.about-container .lead {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  color: #4b5563;              /* muted */
+  text-align: left;
+  margin: 0 0 22px 0;
+  line-height: 1.7;
+}
+
+/* Section headings */
+.about-container h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #0f172a;
+  margin: 20px 0 8px 0;
+  font-weight: 600;
+}
+
+/* Body paragraphs */
+.about-container p {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.75;
+  margin: 0 0 16px 0;
+}
+
+/* Slight visual gap between sections */
+.about-container h3 + p {
+  margin-top: 6px;
+}
+
+/* Make first letter of intro a little larger (optional subtle effect) */
+.about-container .lead::first-letter {
+  font-size: 1.15em;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 6px 18px;
+  }
+
+  .about-container h1 {
+    margin-bottom: 20px;
+  }
+
+  .about-container .lead,
+  .about-container p {
+    font-size: 15px;
+  }
+
+  .about-container h3 {
+    font-size: 18px;
+  }
+}
+
+/* Print-friendly minor tweak */
+@media print {
+  .about-section { padding: 20px; color: #000; background: #fff; }
+  .about-container h1 { color: #000; }
+}
+
+/* Footer Section */
+.footer {
+  background: linear-gradient(to right, #0B1C2C, #2E0C0C);
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ff4d5a;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #bbb;
+}
+
+.contact-info {
+  text-align: center;
+  padding-top: 0;
+  object-position: center;
+  margin-top: 11px;
+  color: #ffffff;
+}
+  </style>
+
     <!--Navbar-->
 
     <div class="main-header">
@@ -45,15 +214,85 @@
       text>
       </body>
 
-      <!-- Hero Banner Section -->
-      <section style="position: absolute; width: 100%; height: 100px; overflow: hidden;"></section>
-
-       <!--Image-->
-      <img src="/image/White-Hoodie.png" alt="Walk & Wear Outfit"
-       style="width: 100%; height: 100%; object-fit: cover; object-position: right; font-size: 1920×400px;">
-
+      <section class="about-section">
+        <div class="about-container">
+          <h1>ABOUT US</h1>
       
+          <p class="lead">Welcome to Walk & Wear, where comfort meets confidence. We bring you premium-quality streetwear hoodies, t-shirts, and everyday essentials designed for those who live boldly and walk their own path.</p>
+      
+          <h3>Our Vision</h3>
 
-    
-</body>
-</html>
+          <p>At Walk & Wear, we believe that fashion should be effortless, expressive, and accessible to everyone. Our vision is simple to create clothing that helps you look good, feel good, and stand out, without spending a fortune.</p>
+      
+          <h3>Quality You Can Feel</h3>
+
+          <p>Every piece at Walk & Wear is crafted with care from the softness of our fabrics to the precision of every stitch. We use high-quality materials to ensure durability, comfort, and a perfect fit that lasts through every season.</p>
+
+          <h3>Affordable Street Luxury</h3>
+
+          <p>We believe great style shouldn’t come with a heavy price tag. By managing our production smartly and selling directly to you, we make sure you get top-tier quality at reasonable prices. That’s what we call affordable street luxury.</p>
+
+          <h3>Timeless & Trendy</h3>
+
+          <p>Our designs blend modern streetwear trends with timeless comfort perfect for daily wear, casual outings, or making a bold fashion statement. Whether it’s a hoodie, tee, or custom piece, every product reflects our passion for urban style.</p>
+
+          <h3>Customer First</h3>
+
+          <p>You’re not just a customer you’re part of the Walk & Wear community. From browsing to delivery, we’re committed to providing a smooth and satisfying experience. Our team is always here to help you pick your next favorite fit.</p>
+
+          <h3>Join the Movement</h3>
+
+          <p>Step into a world where style meets comfort. Explore our collection and discover clothing that’s made to move with you every walk, every day.</p>
+
+          <br>
+          <br>
+
+          <p>Thank you for being part of Walk & Wear where every step is a statement.</p>
+      
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/shop.html">Shop</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/FAQ.html">FAQ</a></li>
+        <li><a href="/policies.html">Policies</a></li>
+      </ul>
+    </div>
+
+    <section class="contact-info">
+      <h3>Contact Information</h3>
+      <p>📍 Address: Karachi, Pakistan</p>
+      <p>📧 Email: walkandwear04@gmail.com</p>
+      <p>📞 Phone: +92 320 8754617</p>
+      <p>🕒 Working Hours: Mon–Sat | 10 AM – 8 PM</p>
+    </section>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/walk__wear_?utm_source=ig_web_button_share_sheet&igsh=ZjZ6d3h0cHlxa3Fx"><img src="/image/instagram (2).png" alt="Instagram"></a>
+        <a href="#"><img src="/image/facebook.png" alt="Facebook"></a>
+        <a href="https://www.tiktok.com/@walk__wear_?is_from_webapp=1&sender_device=pc"><img src="/image/tiktok.png" alt="TikTok"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Text -->
+  <div class="footer-bottom">
+    <p>© 2025 Walk & Wear. All rights reserved.</p>
+  </div>
+</footer>
+
+    </body>
+  </html>

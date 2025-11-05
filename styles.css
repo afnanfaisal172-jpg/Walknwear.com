@@ -298,3 +298,7 @@
   margin-top: 11px;
   color: #ffffff;
 }
+
+body {
+  background: linear-gradient(to right,  #2E0C0C, #0B1C2C);
+}
